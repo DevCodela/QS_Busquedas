@@ -97,8 +97,3 @@ def my_isnull(request):
 	dic = {'libros': libros , 'titulo':'Ejemplo sobre el query  IENDSWITH'}
 	return render(request,'query.html',dic)
 
-
-def my_(request):
-	libros = Libro.objects.filter(fecha_publicacion__day = 13)
-	dic = {'libros': libros , 'titulo':'Ejemplo sobre el query  IENDSWITH'}
-	return render(request,'query.html',dic)
